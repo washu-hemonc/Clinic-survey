@@ -1105,7 +1105,7 @@ document.querySelectorAll('input, textarea').forEach(el => {
 // ── Submit ──
 // IMPORTANT: Replace APPS_SCRIPT_URL below with your deployed Google Apps Script Web App URL
 // Instructions for getting this URL are in the Setup Guide document
-const APPS_SCRIPT_URL = 'YOUR_APPS_SCRIPT_URL_HERE';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzwXMdYJTza1r2sqQKoY-9wey5bL6wLwsTgju0oxKs7voHr69x0R8rb1b8QNKFIkSmfQg/exec';
 
 function collectFormData() {
   const data = {};
@@ -1195,7 +1195,7 @@ async function submitSurvey() {
 
   const formData = collectFormData();
 
-  if (APPS_SCRIPT_URL === 'YOUR_APPS_SCRIPT_URL_HERE') {
+  if (APPS_SCRIPT_URL === 'https://script.google.com/macros/s/AKfycbzwXMdYJTza1r2sqQKoY-9wey5bL6wLwsTgju0oxKs7voHr69x0R8rb1b8QNKFIkSmfQg/exec') {
     console.log('Survey data (Apps Script not yet connected):', formData);
     showSuccess();
     return;
